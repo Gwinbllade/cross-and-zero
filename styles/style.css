@@ -1,0 +1,81 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    width: 99vw;
+}
+
+
+.game-meny{
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 50px;
+}
+
+
+
+.game-field{
+    height: 500px;
+    width: 500px;
+    background-color: black ;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 2px;
+    border: 2px black solid;
+    border-radius: 2px;
+}
+
+
+.game-cell{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.big-circle{
+    width: 90%;
+    height: 90%;
+    background-color: black;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-circle{
+    width: 90%;
+    height: 90%;
+    border-radius: 100%;
+    background: aqua;
+}
+
+.cross-element-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.cross-element-container span{
+    height: 90%;
+    width: 10%;
+    background: #000;
+    border-radius: 20px;
+    position: absolute;
+}
+
+.cross-element-container span:first-child{
+    transform: rotate(-45deg);
+}
+
+.cross-element-container span:last-child{
+    transform: rotate(45deg);
+}
